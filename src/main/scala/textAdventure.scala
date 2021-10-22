@@ -10,4 +10,5 @@ object textAdventure {
   def bar(cellwidth: Int = 3) = ("+" + "-" * cellwidth) * spalten + "+\n"
   val mesh = (bar(width) + cells(width)) * zeilen + bar(width)
   println(mesh)
+  println("Hey")
 }
