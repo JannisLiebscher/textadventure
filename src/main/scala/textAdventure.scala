@@ -1,5 +1,4 @@
 object textAdventure {
-
   @main def hello: Unit =
     println("Welcome!")
 
@@ -11,5 +10,4 @@ object textAdventure {
   val mesh = (bar(width) + cells(width)) * zeilen + bar(width)
   println(mesh)
   println("Hey")
-  println("Na du? :)")
 }
