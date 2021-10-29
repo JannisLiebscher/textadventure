@@ -1,7 +1,8 @@
+package textAdventure
 import org.scalatest.wordspec.AnyWordSpec
 import org.scalatest.matchers.should.Matchers._
 
-class textAdventureSpec {
+class textAdventureSpec extends AnyWordSpec {
 
   "A Healthbar" when {
     "empty" should {

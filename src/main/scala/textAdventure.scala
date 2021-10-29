@@ -2,7 +2,7 @@ object textAdventure {
   @main def hello: Unit =
     println("Welcome!")
 
-  val health = 10
+  val health = 7
   val width = 1
   val zeilen = 1
   val spalten = 20
