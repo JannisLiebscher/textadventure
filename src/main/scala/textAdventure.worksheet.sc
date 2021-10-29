@@ -1,5 +1,5 @@
 case class cells(cellwidth: Int) {
-  var value = 0
+  val value = 1
   def isSet: Boolean = value != 0
 }
 
