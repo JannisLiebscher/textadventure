@@ -12,6 +12,7 @@ def healthbar(hp: Int = 0): String =
   ("|" + "+ " * hp) + "  " * (10 - hp) + "|"
 def hp = healthbar(10)
 hp.equals("|+ + + + + + + + + + |")
-print(hp)
+val hp2 = healthbar(1)
+print(hp2)
 val st = "hallo"
 st.equals("hallo")

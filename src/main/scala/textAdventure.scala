@@ -1,8 +1,14 @@
+import scala.io.StdIn.readLine
+
 object textAdventure {
   @main def hello: Unit =
     println("Welcome!")
+    println("HP between 0 and 10")
+    val health = readLine.toInt
+    val mesh = (bar(width) + cells(width)) * zeilen + bar(width)
+    println(mesh)
+    print("HP:" + healthbar(health) + "\n")
 
-  val health = 10
   val width = 1
   val zeilen = 1
   val spalten = 20
@@ -11,9 +17,5 @@ object textAdventure {
 
   def healthbar(hp: Int = 0): String =
     ("|" + "+ " * hp) + "  " * (10 - hp) + "|"
-  val test = healthbar(health)
-  val mesh = (bar(width) + cells(width)) * zeilen + bar(width)
-  println(mesh)
-  print("HP:" + test + "\n")
 
 }
