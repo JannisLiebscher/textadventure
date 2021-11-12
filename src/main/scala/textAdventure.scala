@@ -1,7 +1,7 @@
 import scala.io.StdIn.readLine
 
 object textAdventure {
-  @main def hello: Unit =
+  @main def run: Unit =
     println("Welcome!")
     println("HP between 0 and 10")
     val health = readLine.toInt
@@ -17,5 +17,4 @@ object textAdventure {
 
   def healthbar(hp: Int = 0): String =
     ("|" + "+ " * hp) + "  " * (10 - hp) + "|"
-
 }
