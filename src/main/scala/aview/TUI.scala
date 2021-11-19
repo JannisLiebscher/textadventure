@@ -16,7 +16,8 @@ class TUI(controller: Controller) extends Observer:
     val input = readLine
     input match
       case "hp" =>
-        val test = controller.getHealth()
         print(controller.getHealth().toString())
+      case "lvl" =>
+        print(controller.getLvl().toString())
       case _ =>
         print("Unknown command!\n")
