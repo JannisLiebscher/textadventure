@@ -1,6 +1,5 @@
 package model
 
-case class Health():
-  val hp = 10
+case class Health(hp: Int):
   override def toString: String =
     ("|" + "+ " * hp) + "  " * (10 - hp) + "|"

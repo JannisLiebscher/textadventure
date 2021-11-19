@@ -1,7 +1,11 @@
 package controller
 import util.Observable
 import model.Health
-case class Controller(h: Health) extends Observable:
+import model.Level
+case class Controller(h: Health, l: Level) extends Observable:
+
   def getHealth(): String = h.toString
 
-  def ToString(): String = "Hi ich bin ein Controller!"
+  override def toString(): String = "Hi ich bin ein Controller!"
+
+  def getLvl(): String = l.toString

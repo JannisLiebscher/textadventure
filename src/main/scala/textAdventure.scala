@@ -2,12 +2,16 @@ import scala.io.StdIn.readLine
 
 object textAdventure {
   @main def run: Unit =
-    println("Welcome!")
-    println("HP between 0 and 10")
+    /* println("Welcome!")
+    println("Enter HP between 0 and 10")
     val health = readLine.toInt
     val mesh = (bar(width) + cells(width)) * zeilen + bar(width)
     println(mesh)
-    print("HP:" + healthbar(health) + "\n")
+    print("HP:" + healthbar(health) + "\n") */
+    val c =
+      new controller.Controller(new model.Health(10), new model.Level(1))
+    val tui = new aview.TUI(c)
+    tui.run
 
   val width = 1
   val zeilen = 1
